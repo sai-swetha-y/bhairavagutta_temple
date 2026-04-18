@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bhairavagutta | Sri Maha Kala Bhairava & Abhaya Shaneeswara</title>
+    <meta
+      name="description"
+      content="Official website for Bhairavagutta temple with pooja bookings, QR / GPay payments, temple gallery and Telugu Panchang based special days."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Sans+Telugu:wght@400;500;700&family=Outfit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="site-veil"></div>
+
+      <nav class="navbar navbar-expand-lg temple-navbar sticky-top">
+        <div class="container nav-shell">
+          <a class="navbar-brand" href="#home">
+            <span class="brand-mark">&#2384;</span>
+            <span>
+              <small>Bhairavagutta</small>
+              <strong>Temple</strong>
+            </span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#templeNav"
+            aria-controls="templeNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="templeNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+              <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#aboutModal">
+  About
+</a></li>
+              <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#deitiesModal">
+  Deities
+</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#specialDaysModal">
+  Special Days
+</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#poojaSection">Poojas</a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <header class="hero-section" id="home">
+        <div class="hero-orb hero-orb-left"></div>
+        <div class="hero-orb hero-orb-right"></div>
+        <div class="container position-relative">
+          <div class="hero-grid">
+            <div class="hero-copy-column">
+              <p class="section-kicker">Ancient Hill Shrine | Medchal</p>
+              <h3 id="heroTitle">
+                Sri Maha Kala Bhairava Swamy Swayambhu  &amp; Abhaya Shaneeswara Swamy Kshetram
+              </h3>
+              <p class="hero-copy">
+                A sacred devotional experience for Bhairavagutta, where we are
+                celebrating the Swayambhu presence of Sri Maha Kala Bhairava Swamy and the protective grace of Sri Abhaya
+                Shaneeswara Swamy.
+              </p>
+
+              <div class="hero-actions">
+                <a
+                  id="mapLink"
+                  class="btn btn-temple-primary"
+                  target="_blank"
+                  rel="noreferrer"
+                  href="#"
+                >
+                  <i class="bi bi-geo-alt-fill"></i>
+                  View Temple Map
+                </a>
+                <a
+                  id="whatsAppLink"
+                  class="btn btn-temple-secondary"
+                  target="_blank"
+                  rel="noreferrer"
+                  href="#"
+                >
+                  <i class="bi bi-whatsapp"></i>
+                  WhatsApp Temple
+                </a>
+              </div>
+
+              <div class="hero-trust-row">
+                <div class="trust-pill">
+                  <span>Temple Address</span>
+                  <strong id="heroAddress"></strong> 
+                </div>
+              </div>
+
+</div>
+            <div class="hero-visual-column">
+  <div class="gallery-stack">
+
+    <img class="gallery-img" src="assets/gallery/bhairavagutta-1.jpg">
+    <img class="gallery-img" src="assets/gallery/bhairavagutta-2.jpg">
+    <img class="gallery-img" src="assets/gallery/bhairavagutta-3.jpg">
+    <img class="gallery-img" src="assets/gallery/bhairavagutta-4.jpg">
+    <img class="gallery-img" src="assets/gallery/bhairavagutta-5.jpg">
+    <img class="gallery-img" src="assets/gallery/bhairavagutta-6.jpg">
+    <img class="gallery-img" src="assets/gallery/bhairavagutta-7.jpg">
+    <img class="gallery-img" src="assets/gallery/bhairavagutta-8.jpg">
+
+  </div>
+</div>
+          
+        </div>
+      </header>
+
+    <section id="poojaSection" class="pooja-section hidden">
+
+  <div class="container">
+
+    <h2 class="section-title">Temple Sevas & Poojas</h2>
+
+ 
+
+    <div class="pooja-accordion">
+
+      <!-- ================= SEVAS ================= -->
+      <div class="pooja-item">
+        <div class="pooja-header">Sevas</div>
+        <div class="pooja-body">
+          <ul>
+
+            <li>
+              Thila Thailabhishekam –
+              <span class="price" data-seva="Thila Thailabhishekam" data-amount="500">₹500/-</span>
+            </li>
+
+            <li>
+              Abhishekam –
+              <span class="price" data-seva="Abhishekam" data-amount="400">₹400/-</span>
+            </li>
+
+            <li>
+              Kooshmanda Deepa Seva –
+              <span class="price" data-seva="Kooshmanda Deepa Seva" data-amount="500">₹500/-</span>
+            </li>
+
+            <li>
+              Homam –
+              <span class="price" data-seva="Homam" data-amount="10116">₹10116/-</span>
+              <span class="note-inline">(Only on Special Days)</span>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= SAAMAN ================= -->
+      <div class="pooja-item">
+        <div class="pooja-header">Pooja Saaman</div>
+        <div class="pooja-body">
+          <ul>
+
+            <li>
+              Abhishekam Set –
+              <span class="price" data-seva="Abhishekam Set" data-amount="400">₹400/-</span>
+            </li>
+
+            <li>
+              Kooshmanda Deepam Set –
+              <span class="price" data-seva="Kooshmanda Deepam Set" data-amount="500">₹500/-</span>
+            </li>
+
+            <li>
+              Homam Saamagri –
+              <span class="price" data-seva="Homam Saaman" data-amount="5000">₹5000/-</span>
+			  <span class="note-inline">(Only on Special Days)</span>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+		  <!-- ================= NITYA ================= -->
+		  <div class="pooja-item">
+  <div class="pooja-header">Nitya Seva Sankalpam</div>
+
+  <div class="pooja-body">
+
+    <!-- SCROLLABLE TABLE -->
+    <div class="pooja-table-wrapper">
+      <table class="pooja-table">
+        <thead>
+          <tr>
+            <th>Seva</th>
+            <th>Regular</th>
+            <th>Opted</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr>
+            <td>Thila Abhishekam</td>
+            <td>₹500/-</td>
+            <td>₹400/-</td>
+          </tr>
+
+          <tr>
+            <td>Abhishekam</td>
+            <td>₹400/-</td>
+            <td>₹300/-</td>
+          </tr>
+
+          <tr>
+            <td>Kooshmanda Deepa Seva</td>
+            <td>₹500/-</td>
+            <td>₹400/-</td>
+          </tr>
+
+          <tr>
+            <td>Homam</td>
+            <td>₹10116/-</td>
+            <td>₹8116/-</td>
+          </tr>
+
+          <tr>
+            <td>Homam Saamagri</td>
+            <td>₹5000/-</td>
+            <td>₹2000/-</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+    <!-- NOTE -->
+    <div class="pooja-note">
+      🔸 <strong>Note:</strong> Homam is conducted only on auspicious special days (Shani Trayodashi, Amavasya, etc.)
+    </div>
+
+    <!-- SUMMARY -->
+    <div class="pooja-summary">
+
+      <div class="summary-box">
+        
+		<p>Monthly pooja Sevas (Thila Thailabhishekam, Abhishekam and kooshmanda deepa seva) cost for regular devotees - ₹5800/-; for opted devotees - ₹4400/- </p>
+		<p>Homam + Hoamam Samagri cost for regular devotees - ₹15116/-; for opted devotees - ₹10116/- </p>
+      </div>
+
+    </div>
+
+    <!-- BUTTON -->
+    <div class="pooja-action">
+      <button class="book-btn" id="nityaBtn">
+        Opt for Nitya Seva Sankalpam – ₹4400/-
+      </button>
+    </div>
+
+  </div>
+</div>
+
+    </div>
+
+  </div>
+
+</section>
+   <footer class="site-footer">
+  <div class="footer-shell">
+
+    <!-- LEFT SIDE -->
+    <div class="footer-left">
+      <p class="footer-connect">
+        <span>Connect with</span>
+        <strong>Divya Anugraham</strong>
+      </p>
+
+      <div class="footer-links">
+        <a id="youtubeLink" class="temple-inline-link" href="#" target="_blank">
+          <i class="bi bi-youtube"></i> YouTube
+        </a>
+
+        <span class="divider">|</span>
+
+        <a id="facebookLink" class="temple-inline-link" href="#" target="_blank">
+          <i class="bi bi-facebook"></i> Facebook
+        </a>
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="footer-right text-end">
+      <p class="footer-title">Bhairavagutta Temple</p>
+      <p class="footer-tagline">Divine Blessings Always</p>
+    </div>
+
+  </div>
+</footer>
+    </div>
+
+
+    <div
+      class="modal fade"
+      id="galleryModal"
+      tabindex="-1"
+      aria-labelledby="galleryModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content gallery-modal-content">
+        
+         <div class="modal-body">
+
+  <div class="gallery-stage-wrap">
+
+    <button type="button" class="gallery-nav prev" id="galleryPrevButton">
+      <i class="bi bi-chevron-left"></i>
+    </button>
+
+    <div class="gallery-stage" id="galleryStage">
+      <img id="galleryStageImage" src="" alt="Temple gallery image" />
+<div class="gallery-toolbar">
+
+  <button class="tool-btn" data-bs-dismiss="modal">
+    <i class="bi bi-x-lg"></i>
+  </button>
+
+  <button class="tool-btn" id="fullscreenBtn">
+    <i class="bi bi-arrows-fullscreen"></i>
+  </button>
+
+  <button class="tool-btn" id="resetZoomButton">
+    <i class="bi bi-aspect-ratio"></i>
+  </button>
+
+  <button class="tool-btn" id="zoomInButton">
+    <i class="bi bi-zoom-in"></i>
+  </button>
+
+  <button class="tool-btn" id="zoomOutButton">
+    <i class="bi bi-zoom-out"></i>
+  </button>
+
+</div>
+
+    </div>
+
+    <button type="button" class="gallery-nav next" id="galleryNextButton">
+      <i class="bi bi-chevron-right"></i>
+    </button>
+
+  </div>
+
+</div>
+          <div class="modal-footer gallery-footer">
+            <span id="galleryCaption">-</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+      <div id="appToast" class="toast temple-toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-body"></div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+	<div class="modal fade" id="aboutModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content temple-modal">
+
+      <!-- CLOSE ONLY -->
+      <div class="modal-header border-0">
+        <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- DIRECT CONTENT -->
+      <div class="modal-body copy-flow">
+
+        <p>
+      This sacred kshetram stands as the private and devoted spiritual property of 
+      <strong>Sri M. Kalyana Ramakrishna, Advocate</strong>, whose unwavering dedication 
+      has preserved and enriched its divine essence.
+    </p>
+
+    <p>
+      At this revered site, <strong>Sri Maha Kala Bhairava Swamy</strong> manifests as a 
+      <em>Swayambhu</em> (self-manifested deity), emerging naturally upon a sacred rock 
+      beneath the ancient Banyan tree. The hill itself, known as 
+      <strong>Bhairava Gutta</strong>, bears the divine form of a 
+      <em>Shiva Linga Aakara</em>, embodying profound spiritual symbolism. According to 
+      longstanding local tradition, this sanctified place has been venerated for over 
+      <strong>three centuries</strong>, carrying a legacy of deep-rooted devotion.
+    </p>
+
+    <p>
+      In a significant spiritual milestone, Sri M. Kalyana Ramakrishna and his family 
+      consecrated a magnificent <strong>six-foot deity of Lord Sri Shaneeswara Swamy</strong> 
+      on <strong>27th February 2003</strong>, an auspicious Thursday marked by 
+      <em>Ekadasi</em> in the <em>Chitrabhanu Nama Samvatsara</em>. Shortly thereafter, 
+      on <strong>1st March 2003</strong>, the first <em>Tailabhishekam</em> was performed 
+      on an exceptionally rare and sacred day—one that uniquely encompassed 
+      <strong>Shani Trayodashi</strong> during the first half and 
+      <strong>Maha Shivaratri</strong> thereafter. This rare confluence of divine timings 
+      renders the occasion extraordinarily auspicious.
+    </p>
+
+    <p>
+      This kshetram is revered as a <strong>truly unique spiritual sanctuary</strong>, 
+      distinguished by the profound <em>Guru–disciple tradition</em> it embodies. Here, 
+      <strong>Sri Maha Kala Bhairava Swamy</strong>, the eternal Guru, is worshipped 
+      alongside His disciple, <strong>Lord Shani</strong>, enshrined as 
+      <strong>Sri Abhaya Shaneeswara Swamy</strong>, symbolizing protection, grace, 
+      and surrender at the Guru’s feet. The presence of 
+      <strong>Sri Vinayaka Swamy</strong> and <strong>Sri Nagendra Swamy</strong> further 
+      enhances the sanctity of this divine abode.
+    </p>
+
+    <p>
+      The temple surroundings flourish as a <strong>sacred ecological haven</strong>, 
+      home to a rich variety of spiritually significant and medicinal flora. Revered 
+      species such as <em>Rudraksha, Naga Lingam, Srigandham, Nagamalli, Tani, 
+      Krishna Marri (Ficus Krishna), Maredu, Banda Nuvvu, Jammi, Ravi, Vepa</em>, 
+      along with sacred <em>Patri</em> used in Vinayaka Chavithi rituals, are abundantly 
+      present. Carefully nurtured by the owner, this verdant landscape has evolved into 
+      a <strong>mini forest of over 10,000 plants</strong>, contributing to both ecological 
+      balance and spiritual harmony.
+    </p>
+
+    <p>
+      Blessed with pristine surroundings, the kshetram offers a 
+      <strong>pollution-free environment</strong>, enriched with high oxygen levels and 
+      imbued with profound <strong>positive energy and divine vibrations</strong>. 
+      It stands not merely as a place of worship, but as a serene sanctuary where 
+      <em>nature and spirituality converge in perfect harmony</em>.
+    </p>
+
+      </div>
+
+      <!-- CLEAN FOOTER -->
+      <div class="modal-footer border-0">
+        <button class="btn btn-temple-outline" data-bs-dismiss="modal">
+          Close
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="deitiesModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content temple-modal">
+
+      <!-- CLOSE BUTTON ONLY -->
+      <div class="modal-header border-0">
+        <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- CONTENT -->
+      <div class="modal-body">
+
+        <div class="row g-4">
+
+          <!-- Bhairava -->
+          <div class="col-md-6">
+            <div class="deity-card p-3">
+              <h5>Sri Maha Kala Bhairava Swamy</h5>
+              <p>
+                The Swayambhu deity and presiding Guru of the kshetram, embodying protection, time, and divine justice.
+              </p>
+            </div>
+          </div>
+
+          <!-- Shani -->
+          <div class="col-md-6">
+            <div class="deity-card p-3">
+              <h5>Sri Abhaya Shaneeswara Swamy</h5>
+              <p>
+                The disciple of Bhairava Swamy, bestowing courage, protection, and relief from planetary hardships.
+              </p>
+            </div>
+          </div>
+
+          <!-- Vinayaka -->
+          <div class="col-md-6">
+            <div class="deity-card p-3">
+              <h5>Sri Vinayaka Swamy</h5>
+              <p>
+                The remover of obstacles and the deity of beginnings, guiding devotees towards success and wisdom.
+              </p>
+            </div>
+          </div>
+
+          <!-- Nagendra -->
+          <div class="col-md-6">
+            <div class="deity-card p-3">
+              <h5>Sri Nagendra Swamy</h5>
+              <p>
+                The serpent deity symbolizing protection, fertility, and harmony with nature and cosmic energies.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- FOOTER -->
+      <div class="modal-footer border-0">
+        <button class="btn btn-temple-outline" data-bs-dismiss="modal">
+          Close
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div><div class="modal fade" id="specialDaysModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content temple-modal">
+
+      <div class="modal-header border-0">
+        <h4 class="text-white">Special Days</h4>
+        <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal"></button>
+      </div>
+		
+      <div class="modal-body">
+
+        <!-- Calendar -->
+        <div id="calendarGrid" class="calendar-grid mb-4"></div>
+
+        <!-- Special Days List -->
+        <div id="specialDaysList" class="row g-3"></div>
+
+      </div>
+
+      <div class="modal-footer border-0">
+        <button class="btn btn-temple-outline" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div id="specialPopup" class="popup">
+  <div class="modal-box text-center">
+    <h3 id="specialTitle"></h3>
+    <p id="specialDate"></p>
+
+    <!-- ✅ ADD THIS BUTTON -->
+    <button id="bookSpecialDayBtn">Book Seva for this Day</button>
+
+    <button onclick="closeSpecial()">Close</button>
+  </div>
+</div>
+<div class="modal fade" id="bookingModal">
+  <div class="modal-dialog">
+    <div class="modal-content temple-modal">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Devotee Details</h5>
+
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+<form id="bookingForm">
+        <p><strong>Seva:</strong> <span id="selectedSeva"></span></p>
+        <p><strong>Amount:</strong> ₹<span id="selectedAmount"></span>/-</p>
+
+        <input id="name" class="form-control mb-2" placeholder="Devotee Name">
+
+<!-- RASHI -->
+<select id="rashi" class="form-control mb-2">
+  <option value="">Select Rasi</option>
+  <option>Mesha</option>
+  <option>Vrishabha</option>
+  <option>Mithuna</option>
+  <option>Karka</option>
+  <option>Simha</option>
+  <option>Kanya</option>
+  <option>Tula</option>
+  <option>Vrischika</option>
+  <option>Dhanu</option>
+  <option>Makara</option>
+  <option>Kumbha</option>
+  <option>Meena</option>
+</select>
+
+<!-- GOTHRAM -->
+<select id="gotram" class="form-control mb-2">
+  <option value="">Select Gothram</option>
+  <option>Kashyapa</option>
+  <option>Bharadwaja</option>
+  <option>Vasishta</option>
+  <option>Vishwamitra</option>
+  <option>Atri</option>
+  <option>Jamadagni</option>
+  <option>Gautama</option>
+  <option>Agastya</option>
+  <option>Kaushika</option>
+  <option>Harita</option>
+  <option>Shandilya</option>
+  <option>Parashara</option>
+  <option>Koundinya</option>
+  <option>Vamadeva</option>
+  <option>Srivatsa</option>
+  <option>Mandavya</option>
+  <option>Maudgalya</option>
+  <option>Kapila</option>
+  <option>Atreya</option>
+  <option>Kutsa</option>
+  <option>Lohita</option>
+  <option>Pulastya</option>
+  <option>Pulaha</option>
+  <option>Kratu</option>
+  <option>Marichi</option>
+  <option>Siva</option>
+  <option value="Others">Others</option>
+</select>
+
+<!-- OTHERS TEXT -->
+<input id="otherGotram" class="form-control mb-2" placeholder="Enter Gothram" style="display:none;">
+<!-- NAKSHATRAM -->
+<select id="nakshatram" class="form-control mb-2">
+  <option value="">Select Nakshatram</option>
+  <option>Ashwini</option>
+  <option>Bharani</option>
+  <option>Krittika</option>
+  <option>Rohini</option>
+  <option>Mrigashira</option>
+  <option>Ardra</option>
+  <option>Punarvasu</option>
+  <option>Pushyami</option>
+  <option>Ashlesha</option>
+  <option>Magha</option>
+  <option>Purva Phalguni (Pubba)</option>
+  <option>Uttara Phalguni</option>
+  <option>Hasta</option>
+  <option>Chitra</option>
+  <option>Swati</option>
+  <option>Vishakha</option>
+  <option>Anuradha</option>
+  <option>Jyeshta</option>
+  <option>Mula</option>
+  <option>Purva Ashada</option>
+  <option>Uttara Ashada</option>
+  <option>Shravana</option>
+  <option>Dhanishta</option>
+  <option>Shatabhisha</option>
+  <option>Purva Bhadra</option>
+  <option>Uttara Bhadra</option>
+  <option>Revati</option>
+</select>
+
+<!-- PADAM -->
+<select id="padam" class="form-control mb-2">
+  <option value="">Select Padam</option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+</select>
+
+
+<!-- PHONE -->
+<input id="phone" class="form-control mb-2" placeholder="Phone Number">
+<label style="color: gold; font-size: 13px;">Family Sankalpam (Optional)</label>
+<textarea id="familyDetails"
+  class="form-control mb-2"
+  placeholder="Family Members (e.g., Spouse, Children names for Sankalpam)">
+</textarea>
+</form>
+      </div>
+
+      <div class="modal-footer">
+      <button type="button" id="proceedBtn" class="btn btn-gold">
+  Proceed
+</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div
+  class="modal fade"
+  id="paymentActionModal"
+  tabindex="-1"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content temple-modal">
+
+      <!-- HEADER -->
+      <div class="modal-header">
+        <h5 class="modal-title">Complete Payment</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+     <div class="modal-body">
+
+  <div class="payment-container">
+
+    <!-- LEFT (QR) -->
+   <div class="payment-left">
+
+  <p style="text-align:center; margin-bottom:8px; color:#ffd700; font-weight:500;">
+  Scan QR using any UPI app to complete payment
+</p>
+
+  <img id="upiQrImage" />
+
+</div>
+    <!-- RIGHT (DETAILS) -->
+   <div class="payment-right">
+
+  <p><strong>Name:</strong> <span id="summaryName"></span></p>
+  <p><strong>Rasi:</strong> <span id="summaryRasi"></span></p>
+  <p><strong>Gothram:</strong> <span id="summaryGothram"></span></p>
+  <p><strong>Nakshatram:</strong> <span id="summaryNakshatram"></span></p>
+  <p><strong>Padam:</strong> <span id="summaryPadam"></span></p>
+  <p><strong>Phone:</strong> <span id="summaryPhone"></span></p>
+  <p><strong>Sankalpam:</strong> <span id="summarySankalpam"></span></p>
+  <p><strong>Amount:</strong> ₹<span id="summaryAmount"></span></p>
+<p><strong>Special Day:</strong> <span id="summarySpecialDay"></span></p>
+  <!-- TXN + COPY -->
+  <p>
+    <strong>Transaction ID:</strong>
+    <span id="txnId"></span>
+    <button id="copyTxnBtn" class="copy-btn">📋</button>
+  </p>
+  <input id="utrNumber" class="form-control mt-2" placeholder="Enter UPI Ref / UTR Number (after payment)">
+
+  <!-- ACTION BUTTONS -->
+  <div class="payment-actions">
+    <a id="payNowBtn" class="btn btn-success d-none" target="_blank">Pay via UPI App</a>
+    <button id="paidBtn" class="paid-btn">I Have Paid</button>
+  </div>
+
+</div>
+
+  </div>
+
+</div>
+
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="specialBookingModal">
+  <div class="modal-dialog">
+    <div class="modal-content temple-modal">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Special Day Booking</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <!-- SEVA DROPDOWN -->
+        <label>Select Sevas</label>
+        <select id="specialSevas" class="form-control mb-2" multiple>
+          <option value="500">Thila Thailabhishekam - ₹500</option>
+          <option value="400">Abhishekam - ₹400</option>
+          <option value="500">Kooshmanda Deepa Seva - ₹500</option>
+          <option value="10116">Homam - ₹10116</option>
+        </select>
+
+        <!-- SAAMAN DROPDOWN -->
+        <label>Select Pooja Items</label>
+        <select id="specialSaaman" class="form-control mb-2" multiple>
+          <option value="400">Abhishekam Set - ₹400</option>
+          <option value="500">Kooshmanda Deepam Set - ₹500</option>
+          <option value="5000">Homam Saamagri - ₹5000</option>
+        </select>
+
+        <!-- TOTAL -->
+        <p><strong>Total Amount:</strong> ₹<span id="specialTotal">0</span></p>
+		<p><strong>Selected Sevas:</strong></p>
+<textarea id="selectedSevasText" class="form-control mb-2" readonly></textarea>
+
+<p><strong>Selected Pooja Items:</strong></p>
+<textarea id="selectedSaamanText" class="form-control mb-2" readonly></textarea>
+
+        <hr/>
+<input id="sp_name" class="form-control mb-2" placeholder="Devotee Name">
+
+<select id="sp_rashi" class="form-control mb-2">
+  <option value="">Select Rasi</option>
+  <option>Mesha</option>
+  <option>Vrishabha</option>
+  <option>Mithuna</option>
+  <option>Karka</option>
+  <option>Simha</option>
+  <option>Kanya</option>
+  <option>Tula</option>
+  <option>Vrischika</option>
+  <option>Dhanu</option>
+  <option>Makara</option>
+  <option>Kumbha</option>
+  <option>Meena</option>
+</select>
+
+<select id="sp_gotram" class="form-control mb-2">
+  <option value="">Select Gothram</option>
+  <option>Kashyapa</option>
+  <option>Bharadwaja</option>
+  <option>Vasishta</option>
+  <option>Vishwamitra</option>
+  <option>Atri</option>
+  <option>Jamadagni</option>
+  <option>Gautama</option>
+  <option>Agastya</option>
+  <option>Kaushika</option>
+  <option>Harita</option>
+  <option>Shandilya</option>
+  <option>Parashara</option>
+  <option>Koundinya</option>
+  <option>Vamadeva</option>
+  <option>Srivatsa</option>
+  <option>Mandavya</option>
+  <option>Maudgalya</option>
+  <option>Kapila</option>
+  <option>Atreya</option>
+  <option>Kutsa</option>
+  <option>Lohita</option>
+  <option>Pulastya</option>
+  <option>Pulaha</option>
+  <option>Kratu</option>
+  <option>Marichi</option>
+  <option>Siva</option>
+  <option value="Others">Others</option>
+</select>
+
+<input id="sp_otherGotram" class="form-control mb-2" placeholder="Enter Gothram" style="display:none;">
+
+<select id="sp_nakshatram" class="form-control mb-2">
+  <option value="">Select Nakshatram</option>
+  <option>Ashwini</option>
+  <option>Bharani</option>
+  <option>Krittika</option>
+  <option>Rohini</option>
+  <option>Mrigashira</option>
+  <option>Ardra</option>
+  <option>Punarvasu</option>
+  <option>Pushyami</option>
+  <option>Ashlesha</option>
+  <option>Magha</option>
+  <option>Purva Phalguni (Pubba)</option>
+  <option>Uttara Phalguni</option>
+  <option>Hasta</option>
+  <option>Chitra</option>
+  <option>Swati</option>
+  <option>Vishakha</option>
+  <option>Anuradha</option>
+  <option>Jyeshta</option>
+  <option>Mula</option>
+  <option>Purva Ashada</option>
+  <option>Uttara Ashada</option>
+  <option>Shravana</option>
+  <option>Dhanishta</option>
+  <option>Shatabhisha</option>
+  <option>Purva Bhadra</option>
+  <option>Uttara Bhadra</option>
+  <option>Revati</option>
+</select>
+
+<select id="sp_padam" class="form-control mb-2">
+  <option value="">Select Padam</option>
+  <option>1</option><option>2</option><option>3</option><option>4</option>
+</select>
+
+<input id="sp_phone" class="form-control mb-2" placeholder="Phone Number">
+<textarea id="sp_family" class="form-control mb-2" placeholder="Family Details"></textarea>
+
+      </div>
+
+      <div class="modal-footer">
+        <button id="specialProceedBtn" class="btn btn-gold">Proceed</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+  </body>
+</html>

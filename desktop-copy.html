@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bhairavagutta | Sri Maha Kala Bhairava & Abhaya Shaneeswara</title>
+    <meta
+      name="description"
+      content="Official website for Bhairavagutta temple with pooja bookings, QR / GPay payments, temple gallery and Telugu Panchang based special days."
+    />
+    <link
+      href="./Bhairavagutta Temple_files/css2"
+      rel="stylesheet"
+    />
+    <link
+      href="./Bhairavagutta Temple_files/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./Bhairavagutta Temple_files/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./Bhairavagutta Temple_files/styles.css" />
+  </head>
+  <body class="desktop-standalone">
+    <div class="page-shell">
+      <div class="site-veil"></div>
+      <div class="ambient-grid"></div>
+
+      <nav class="navbar navbar-expand-lg temple-navbar sticky-top">
+        <div class="container nav-shell">
+          <a class="navbar-brand" href="#home">
+            <span class="brand-mark">&#2384;</span>
+            <span>
+              <small>Bhairavagutta</small>
+              <strong>Temple</strong>
+            </span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#templeNav"
+            aria-controls="templeNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="templeNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+              <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="#deities">Deities</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#special-days">Special Days</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#offerings">Poojas</a></li>
+              <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+              <li class="nav-item">
+                <a class="btn btn-temple-sm" href="#contact">Visit Temple</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <header class="hero-section" id="home">
+        <div class="hero-orb hero-orb-left"></div>
+        <div class="hero-orb hero-orb-right"></div>
+        <div class="container position-relative">
+          <div class="hero-grid">
+            <div class="hero-copy-column premium-copy-column">
+              <div class="hero-intro-bar">
+                <p class="section-kicker mb-0">Ancient Hill Shrine | Medchal</p>
+                <span class="hero-ribbon"
+                  >Swayambhu Bhairava sanctified beneath the Banyan tree</span
+                >
+              </div>
+              <span class="hero-overline">Official Temple Portal</span>
+              <h1 id="heroTitle">
+                Sri Maha Kala Bhairava &amp; Abhaya Shaneeswara Kshetram
+              </h1>
+              <p class="hero-copy">
+                A sacred black-gold devotional experience for Bhairavagutta,
+                celebrating the Swayambhu presence of Sri Maha Kala Bhairava Swamy
+                beneath the Banyan tree and the protective grace of Sri Abhaya
+                Shaneeswara Swamy.
+              </p>
+
+              <div class="hero-actions">
+                <a
+                  id="mapLink"
+                  class="btn btn-temple-primary"
+                  target="_blank"
+                  rel="noreferrer"
+                  href="#"
+                >
+                  <i class="bi bi-geo-alt-fill"></i>
+                  View Temple Map
+                </a>
+                <a
+                  id="whatsAppLink"
+                  class="btn btn-temple-secondary"
+                  target="_blank"
+                  rel="noreferrer"
+                  href="#"
+                >
+                  <i class="bi bi-whatsapp"></i>
+                  WhatsApp Temple
+                </a>
+              </div>
+
+              <div class="hero-trust-row">
+                <div class="trust-pill">
+                  <span>Temple Address</span>
+                  <strong id="heroAddress"></strong>
+                </div>
+                <a
+                  id="youtubeLink"
+                  class="temple-inline-link"
+                  target="_blank"
+                  rel="noreferrer"
+                  href="#"
+                >
+                  Watch Temple Updates
+                </a>
+              </div>
+
+              <div class="hero-highlights" id="quickHighlights"></div>
+
+              <div class="legacy-tags">
+                <span>300+ years of local reverence</span>
+                <span>10,000+ sacred and medicinal plants</span>
+                <span>Rare Shani Trayodashi temple significance</span>
+              </div>
+            </div>
+
+            <div class="hero-visual-column">
+              <div class="hero-composition premium-hero-composition">
+                <figure class="hero-photo hero-photo-main">
+                  <img
+                    id="heroPrimaryImage"
+                    src="./Bhairavagutta Temple_files/bhairavagutta-8.jpg"
+                    alt="Golden steps leading to Bhairavagutta temple"
+                  />
+                  <figcaption class="image-badge">Sacred ascent to the kshetram</figcaption>
+                </figure>
+                <figure class="hero-photo hero-photo-top">
+                  <img
+                    id="heroSecondaryImage"
+                    src="./Bhairavagutta Temple_files/bhairavagutta-1.jpg"
+                    alt="Temple entrance through sacred greenery"
+                  />
+                </figure>
+                <figure class="hero-photo hero-photo-bottom">
+                  <img
+                    id="heroTertiaryImage"
+                    src="./Bhairavagutta Temple_files/bhairavagutta-5.jpg"
+                    alt="Sanctum approach beneath the sacred boulder"
+                  />
+                </figure>
+
+                <article class="hero-day-panel">
+                  <p class="hero-panel-label">Next Panchang Day</p>
+                  <div id="nextSpecialDayCard" class="next-special-day">
+                    <div class="placeholder-glow">
+                      <span class="placeholder col-8"></span>
+                      <span class="placeholder col-6"></span>
+                      <span class="placeholder col-9"></span>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="hero-side-note">
+                  <p class="panel-cap">Temple Distinction</p>
+                  <h3>Guru sannidhi, sacred hill, devotional stillness</h3>
+                  <ul class="heritage-points">
+                    <li>Sri Maha Kala Bhairava Swamy is revered here as Swayambhu.</li>
+                    <li>Abhaya Shaneeswara Swamy stands in the grace of his Guru.</li>
+                    <li>The shrine rests inside a spiritually vibrant mini forest.</li>
+                  </ul>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="heritage-band-section">
+          <div class="container">
+            <div class="heritage-band">
+              <article>
+                <span>Ancient Presence</span>
+                <strong>Bhairava Gutta has been locally revered for more than 300 years.</strong>
+              </article>
+              <article>
+                <span>Sacred Installation</span>
+                <strong>6-foot Sri Abhaya Shaneeswara deity installed on 27 February 2003.</strong>
+              </article>
+              <article>
+                <span>Rare Significance</span>
+                <strong>First Tailabhishekam was performed on 1 March 2003 on a rare sacred combination day.</strong>
+              </article>
+              <article>
+                <span>Living Green Shrine</span>
+                <strong>More than 10,000 sacred and medicinal plants nurture the temple land.</strong>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section" id="about">
+          <div class="container">
+            <div class="section-heading section-heading-split">
+              <div>
+                <p class="section-kicker">Temple Legacy</p>
+                <h2>Ancient presence, sacred silence, living devotion</h2>
+              </div>
+              <p class="section-note">
+                Bhairavagutta is not only a temple site, but a spiritual landscape
+                of rock, banyan, sacred plants, and long-standing local reverence.
+              </p>
+            </div>
+
+            <div class="row g-4 align-items-stretch">
+              <div class="col-lg-7">
+                <article class="temple-panel feature-panel copy-panel">
+                  <div class="panel-cap">Temple Story</div>
+                  <div id="aboutCopy" class="copy-flow"></div>
+                </article>
+              </div>
+              <div class="col-lg-5">
+                <div class="about-stack">
+                  <article class="temple-panel stat-showcase">
+                    <div class="panel-cap">Sacred Highlights</div>
+                    <div class="mini-stat-grid">
+                      <article>
+                        <strong>300+ years</strong>
+                        <span>Local reverence for Bhairava Gutta</span>
+                      </article>
+                      <article>
+                        <strong>10,000+ plants</strong>
+                        <span>Medicinal and sacred green cover</span>
+                      </article>
+                      <article>
+                        <strong>27-02-2003</strong>
+                        <span>Shaneeswara deity installation</span>
+                      </article>
+                      <article>
+                        <strong>01-03-2003</strong>
+                        <span>First Tailabhishekam on a rare sacred combination day</span>
+                      </article>
+                    </div>
+                  </article>
+
+                  <article class="temple-panel plants-panel">
+                    <div class="panel-cap">Sacred Plants</div>
+                    <h3>Mini forest with spiritual and medicinal value</h3>
+                    <div id="sacredPlants" class="plant-chips"></div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section themed-section" id="deities">
+          <div class="container">
+            <div class="section-heading section-heading-split">
+              <div>
+                <p class="section-kicker">Divine Presence</p>
+                <h2>Deities worshipped at Bhairavagutta</h2>
+              </div>
+              <p class="section-note">
+                The kshetram centers the Guru-disciple connection of Sri Maha Kala
+                Bhairava Swamy and Sri Abhaya Shaneeswara Swamy, alongside Sri
+                Vinayaka Swamy and Sri Nagendra Swamy.
+              </p>
+            </div>
+            <div id="deityGrid" class="row g-4 deity-row"></div>
+          </div>
+        </section>
+
+        <section class="content-section" id="special-days">
+          <div class="container">
+            <div class="section-heading section-heading-split">
+              <div>
+                <p class="section-kicker">Telugu Panchang</p>
+                <h2>Auto-populated special days by sunrise tithi</h2>
+              </div>
+              <div class="year-filter">
+                <label for="specialDayYear" class="form-label">Year</label>
+                <select id="specialDayYear" class="form-select form-select-lg"></select>
+              </div>
+            </div>
+
+            <article class="temple-panel calendar-intro">
+              <div class="panel-cap">Panchang Logic</div>
+              <p class="mb-0 subtle-copy">
+                Special days are generated using temple coordinates and Telugu
+                Panchang rules based on the tithi present during sunrise, including
+                Shani Trayodashi, Shani Amavasya, and Sri Maha Kala Bhairava
+                Ashtami.
+              </p>
+            </article>
+
+            <div id="specialDaysList" class="row g-4 mt-1"></div>
+          </div>
+        </section>
+
+        <section class="content-section themed-section" id="offerings">
+          <div class="container">
+            <div class="section-heading section-heading-split">
+              <div>
+                <p class="section-kicker">Poojas &amp; Sets</p>
+                <h2>Book a seva and make your offering</h2>
+              </div>
+              <p class="section-note">
+                Devotee details are collected before payment. Desktop shows QR with
+                offline receipt generation, while mobile opens Google Pay and then
+                stores the confirmed transaction.
+              </p>
+            </div>
+            <div id="offeringsGrid" class="row g-4"></div>
+          </div>
+        </section>
+
+        <section class="content-section" id="gallery">
+          <div class="container">
+            <div class="section-heading section-heading-split">
+              <div>
+                <p class="section-kicker">Temple Gallery</p>
+                <h2>Original temple photographs in an immersive premium gallery</h2>
+              </div>
+              <p class="section-note">
+                Use the gallery to explore the temple, sacred landscape, and
+                devotional atmosphere with zoom, arrows, and full-screen preview.
+              </p>
+            </div>
+            <div id="galleryGrid" class="gallery-grid"></div>
+          </div>
+        </section>
+
+        <section class="content-section contact-section" id="contact">
+          <div class="container">
+            <div class="row g-4">
+              <div class="col-lg-8">
+                <article class="temple-panel contact-card premium-contact-card">
+                  <div class="panel-cap">Visit Temple</div>
+                  <h2 id="contactTempleName">Bhairavagutta Temple</h2>
+                  <p id="contactAddress" class="contact-address"></p>
+
+                  <div class="contact-actions">
+                    <a
+                      id="contactMapLink"
+                      class="btn btn-temple-primary"
+                      target="_blank"
+                      rel="noreferrer"
+                      href="#"
+                    >
+                      Open Map
+                    </a>
+                    <a id="contactWhatsAppLink" class="btn btn-temple-secondary" href="#">
+                      WhatsApp
+                    </a>
+                    <a
+                      id="facebookLink"
+                      class="btn btn-temple-outline"
+                      target="_blank"
+                      rel="noreferrer"
+                      href="#"
+                    >
+                      Facebook
+                    </a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-lg-4">
+                <article class="temple-panel owner-card premium-owner-card">
+                  <div class="panel-cap">Stewardship</div>
+                  <h3>Private Property</h3>
+                  <p id="ownerText" class="mb-0"></p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-shell">
+          <div>
+            <p class="footer-title mb-1">Bhairavagutta Temple</p>
+            <p class="mb-0">Sri Maha Kala Bhairava Swamy | Abhaya Shaneeswara Swamy</p>
+          </div>
+          <p class="mb-0 footer-copy">
+            Sacred hill shrine at Ravalkole Village, Medchal Mandal, R.R. District.
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <div
+      class="modal fade"
+      id="bookingModal"
+      tabindex="-1"
+      aria-labelledby="bookingModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content temple-modal">
+          <div class="modal-header">
+            <div>
+              <p class="section-kicker mb-1">Devotee Details</p>
+              <h3 class="modal-title" id="bookingModalLabel">Book seva</h3>
+            </div>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <form id="bookingForm" class="modal-body">
+            <div class="selected-offering-panel">
+              <span>Selected Offering</span>
+              <strong id="selectedOfferingTitle">-</strong>
+              <small id="selectedOfferingAmount">-</small>
+            </div>
+
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label" for="devoteeName">Name</label>
+                <input
+                  id="devoteeName"
+                  name="name"
+                  type="text"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="gothram">Gothram</label>
+                <select id="gothram" name="gothram" class="form-select" required></select>
+              </div>
+              <div class="col-md-6 d-none" id="customGothramWrap">
+                <label class="form-label" for="customGothram">Enter Gothram</label>
+                <input
+                  id="customGothram"
+                  name="customGothram"
+                  type="text"
+                  class="form-control"
+                />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="nakshatram">Nakshatram</label>
+                <select
+                  id="nakshatram"
+                  name="nakshatram"
+                  class="form-select"
+                  required
+                ></select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="padam">Padam</label>
+                <select id="padam" name="padam" class="form-select" required>
+                  <option value="">Select padam</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="raashi">Raashi</label>
+                <select id="raashi" name="raashi" class="form-select" required></select>
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="sankalpam">Sankalpam</label>
+                <textarea
+                  id="sankalpam"
+                  name="sankalpam"
+                  class="form-control"
+                  rows="3"
+                  placeholder="Write the sankalpam or special prayer request"
+                ></textarea>
+              </div>
+            </div>
+          </form>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-temple-outline" data-bs-dismiss="modal">
+              Close
+            </button>
+            <button type="submit" class="btn btn-temple-primary" form="bookingForm" id="proceedButton">
+              Proceed
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="paymentActionModal"
+      tabindex="-1"
+      aria-labelledby="paymentActionTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content temple-modal">
+          <div class="modal-header">
+            <div>
+              <p class="section-kicker mb-1">Payment Step</p>
+              <h3 class="modal-title" id="paymentActionTitle">Complete your offering</h3>
+            </div>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="selected-offering-panel">
+              <span>Transaction</span>
+              <strong id="paymentOfferingTitle">-</strong>
+              <small id="paymentOfferingMeta">-</small>
+            </div>
+            <div class="row g-4 align-items-center">
+              <div class="col-lg-5">
+                <div class="qr-shell">
+                  <img id="paymentQrImage" src="" alt="Temple UPI QR code" />
+                </div>
+              </div>
+              <div class="col-lg-7">
+                <div class="payment-mode-badge" id="paymentModeBadge"></div>
+                <p id="paymentInstructions" class="subtle-copy mt-3 mb-4"></p>
+                <div class="payment-link-group">
+                  <button type="button" id="openGpayButton" class="btn btn-temple-secondary">
+                    <i class="bi bi-phone-fill"></i>
+                    Open Google Pay
+                  </button>
+                  <button type="button" id="copyUpiButton" class="btn btn-temple-outline">
+                    <i class="bi bi-copy"></i>
+                    Copy UPI Link
+                  </button>
+                </div>
+                <div class="row g-3 mt-1">
+                  <div class="col-md-6">
+                    <label class="form-label" for="upiTransactionId">UPI Ref No.</label>
+                    <input
+                      id="upiTransactionId"
+                      type="text"
+                      class="form-control"
+                      placeholder="Optional"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label" for="approvalReferenceNo"
+                      >Approval Ref No.</label
+                    >
+                    <input
+                      id="approvalReferenceNo"
+                      type="text"
+                      class="form-control"
+                      placeholder="Optional"
+                    />
+                  </div>
+                </div>
+                <div class="temple-panel small mt-4">
+                  <strong>Transaction ID</strong>
+                  <span id="internalTransactionId" class="subtle-copy d-block mt-2"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-temple-outline" data-bs-dismiss="modal">
+              Close
+            </button>
+            <button type="button" class="btn btn-temple-primary" id="confirmPaymentButton">
+              Confirm Payment
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="receiptModal"
+      tabindex="-1"
+      aria-labelledby="receiptTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content temple-modal">
+          <div class="modal-header">
+            <div>
+              <p class="section-kicker mb-1">Temple Receipt</p>
+              <h3 class="modal-title" id="receiptTitle">Offering receipt</h3>
+            </div>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div id="receiptContent" class="receipt-card"></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-temple-outline" data-bs-dismiss="modal">
+              Close
+            </button>
+            <button type="button" class="btn btn-temple-primary" id="printReceiptButton">
+              Print Receipt
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="galleryModal"
+      tabindex="-1"
+      aria-labelledby="galleryModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content gallery-modal-content">
+          <div class="modal-header">
+            <div>
+              <p class="section-kicker mb-1">Temple Gallery</p>
+              <h3 class="modal-title" id="galleryModalLabel">Image Preview</h3>
+            </div>
+            <div class="gallery-toolbar">
+              <button type="button" class="gallery-tool" id="zoomOutButton" title="Zoom out">
+                <i class="bi bi-zoom-out"></i>
+              </button>
+              <button type="button" class="gallery-tool" id="resetZoomButton" title="Reset zoom">
+                <i class="bi bi-aspect-ratio"></i>
+              </button>
+              <button type="button" class="gallery-tool" id="zoomInButton" title="Zoom in">
+                <i class="bi bi-zoom-in"></i>
+              </button>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+          </div>
+          <div class="modal-body gallery-stage-wrap">
+            <button type="button" class="gallery-nav prev" id="galleryPrevButton">
+              <i class="bi bi-chevron-left"></i>
+            </button>
+            <div class="gallery-stage" id="galleryStage">
+              <img id="galleryStageImage" src="" alt="Temple gallery image" />
+            </div>
+            <button type="button" class="gallery-nav next" id="galleryNextButton">
+              <i class="bi bi-chevron-right"></i>
+            </button>
+          </div>
+          <div class="modal-footer gallery-footer">
+            <span id="galleryCaption">-</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+      <div id="appToast" class="toast temple-toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-body"></div>
+      </div>
+    </div>
+
+    <script src="./Bhairavagutta Temple_files/bootstrap.bundle.min.js"></script>
+    <script src="./Bhairavagutta Temple_files/script.js"></script>
+  </body>
+</html>
